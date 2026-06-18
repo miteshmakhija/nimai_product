@@ -4,7 +4,7 @@
 # Prerequisites:
 #   - Docker Desktop running (for Redis + Postgres)
 #   - Node.js installed (for Vite)
-#   - Python venv already created in .venv (root level, Python 3.14)
+#   - Python venv already created in .venv (root level, Python 3.12)
 #
 # Services started:
 #   1. Redis (Docker container)   localhost:6379

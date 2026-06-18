@@ -90,7 +90,7 @@ Tokens live in `theme.css` — always use CSS vars / Tailwind utilities, not har
 1. **`db.py` UUID/JSONB TypeDecorators** — never replace with `sqlalchemy.dialects.postgresql.*`. Tests use SQLite.
 2. **`conftest.py` top-of-file `os.environ.setdefault` + `StaticPool`** — do not move or reorder.
 3. **`bcrypt==3.2.2` + `passlib[bcrypt]==1.7.4`** — do not upgrade bcrypt to 4.x.
-4. **`pydantic>=2.13.4`** — Python 3.14 requires 2.11+ wheels; verified compatible with `langchain-core 1.4.7`. Do not downgrade below 2.11.
+4. **`pydantic>=2.13.4`** — verified compatible with `langchain-core 1.4.7` on Python 3.12. Do not downgrade below 2.11.
 5. **Alembic migrations `27c9e7a3bfc9` and `a1b2c3d4e5f6`** — applied to Rancher Postgres. Never edit; add a new revision.
 6. **`AWS_REGION` must NOT appear in `.env`** — pydantic-settings `extra=forbid` rejects the app.
 7. **`python-docx`** — keep in requirements; used by `docx_export.py`.

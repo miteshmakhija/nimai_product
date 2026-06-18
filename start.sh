@@ -5,7 +5,7 @@
 # Prerequisites:
 #   - Docker installed & running (for Redis)
 #   - Postgres running (RDS or local Docker container)
-#   - Python 3.11+ with venv created at .venv/
+#   - Python 3.12 with venv created at .venv/
 #   - Node.js 18+ and npm installed
 #   - backend/.env file configured (copy from backend/.env.example)
 #

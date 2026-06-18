@@ -1,4 +1,4 @@
-# Requires Python >=3.14
+# Requires Python >=3.12
 # ── Web framework ─────────────────────────────────────────────────────────────
 fastapi==0.136.3
 uvicorn==0.49.0
@@ -7,12 +7,12 @@ python-multipart==0.0.32
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 python-dotenv==1.0.0
-pydantic==2.13.4           # 2.11+ required for Python 3.14 wheels; verified compatible with langchain-core 1.4.7
+pydantic==2.13.4           # 2.11+ required; verified compatible with langchain-core 1.4.7
 pydantic-settings==2.14.1
 pydantic_core==2.46.4
 
 # ── Database ──────────────────────────────────────────────────────────────────
-SQLAlchemy==2.0.51             # 2.0.23 crashes on Python 3.14 (__firstlineno__/__static_attributes__)
+SQLAlchemy==2.0.51
 psycopg2-binary==2.9.12
 alembic==1.13.1
 
@@ -59,7 +59,7 @@ docxtpl>=0.16.0            # Jinja2 templating inside .docx files
 
 # ── Vector store ──────────────────────────────────────────────────────────────
 faiss-cpu==1.14.3
-numpy==2.4.6               # 2.x required for Python 3.14 wheels
+numpy==2.4.6
 
 # ── ML / vision (docling dependencies) ───────────────────────────────────────
 torch==2.12.0
@@ -73,7 +73,7 @@ opencv-python==4.13.0.92
 pillow==12.2.0
 
 # ── HTTP / networking ─────────────────────────────────────────────────────────
-httpx==0.28.1              # 0.28+ required for Python 3.14 wheels and docling-slim 2.103
+httpx==0.28.1              # 0.28+ required for docling-slim 2.103
 httpx-sse==0.4.3
 requests==2.34.2
 aiohttp==3.14.1
