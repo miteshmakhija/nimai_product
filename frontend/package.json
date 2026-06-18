@@ -1,0 +1,12 @@
+{
+  "name": "nimai-frontend",
+  "private": true,
+  "workspaces": ["website", "rfq"],
+  "scripts": {
+    "dev:website": "npm run dev --workspace website",
+    "dev:rfq": "npm run dev --workspace rfq",
+    "build:website": "npm run build --workspace website",
+    "build:rfq": "npm run build --workspace rfq",
+    "build": "npm run build:website && npm run build:rfq"
+  }
+}

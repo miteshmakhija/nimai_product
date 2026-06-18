@@ -1,0 +1,184 @@
+:root {
+  /* New design tokens */
+  --color-navy: #0d1b2a;
+  --color-text: #1a1a2e;
+  --color-text-muted: #6b7280;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8fafc;
+  --color-border: #e5e7eb;
+  --color-pi: #4361ee;
+  --color-rfq: #10b981;
+  --color-ts: #7c3aed;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  --shadow-sm: 0 2px 8px rgba(79, 70, 229, 0.08);
+  --shadow-md: 0 8px 32px rgba(79, 70, 229, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.2s ease;
+
+  /* Legacy tokens (Consulting + Services) */
+  --white: #ffffff;
+  --bg-light: #f5f7ff;
+  --bg-card: #f0f3ff;
+  --indigo: #4f46e5;
+  --indigo-dark: #3730a3;
+  --cyan: #06b6d4;
+  --purple: #8b5cf6;
+  --text-primary: #0f0f2d;
+  --text-secondary: #4a4a6a;
+  --text-muted: #9090b0;
+  --border: #e2e8f0;
+  --border-strong: rgba(79, 70, 229, 0.16);
+  --gradient-main: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  --gradient-alt: linear-gradient(135deg, #8b5cf6 0%, #4f46e5 100%);
+  --gradient-soft: linear-gradient(135deg, #f0f3ff 0%, #e8efff 100%);
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --shadow-card: 0 16px 40px rgba(15, 15, 45, 0.08);
+  --shadow-xl: 0 28px 80px rgba(15, 15, 45, 0.14);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; }
+
+section {
+  scroll-margin-top: 68px;
+}
+
+/* ── Containers ── */
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 3vw, 32px);
+}
+
+/* ── Section header ── */
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 12px;
+}
+
+.section-header p {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Section tag (Consulting / Services labels) ── */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(240, 243, 255, 0.9));
+  border: 1px solid rgba(79, 70, 229, 0.14);
+  border-radius: 100px;
+  padding: 7px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--indigo);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gradient-main);
+}
+
+/* ── Gradient text ── */
+.gradient-text {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--color-pi);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #3451d1;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-navy);
+  border: 2px solid var(--color-border);
+}
+
+.btn-ghost:hover {
+  border-color: var(--color-pi);
+  color: var(--color-pi);
+  background: rgba(67, 97, 238, 0.04);
+}
+
+/* ── Animation ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

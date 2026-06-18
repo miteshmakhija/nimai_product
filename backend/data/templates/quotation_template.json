@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "extracted_date": "2026-05-07",
+  "sections": [
+    {
+      "name": "header",
+      "required": true,
+      "format": "company_letterhead",
+      "fields": [
+        "company_name",
+        "address"
+      ]
+    },
+    {
+      "name": "offer_details",
+      "required": true,
+      "fields": [
+        "offer_number",
+        "offer_date",
+        "customer_name"
+      ]
+    },
+    {
+      "name": "pricing_table",
+      "required": true,
+      "format": "table"
+    },
+    {
+      "name": "terms_and_conditions",
+      "required": true,
+      "format": "bullet_points"
+    },
+    {
+      "name": "footer",
+      "required": true,
+      "format": "signature_block"
+    }
+  ],
+  "required_fields": [
+    "customer_name",
+    "equipment_type",
+    "process_and_mechanical_details",
+    "vessel_details",
+    "material_of_construction"
+  ],
+  "format_examples": {
+    "date_format": "DD-MMM-YYYY",
+    "currency": "INR"
+  }
+}

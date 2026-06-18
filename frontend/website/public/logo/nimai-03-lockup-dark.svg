@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+<defs></defs>
+<rect width="1200" height="380" fill="#141F40"></rect>
+<g transform="translate(80,40) scale(3)">
+  <circle cx="50" cy="50" r="44" fill="none" stroke="white" stroke-width="2.5" stroke-opacity="0.45"></circle>
+  <g stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M34 70 V34"></path><path d="M34 34 L66 70"></path><path d="M66 70 V34"></path>
+  </g>
+  <circle cx="34" cy="34" r="6.5" fill="#F26A3B"></circle>
+  <circle cx="66" cy="70" r="6.5" fill="#5BC2E2"></circle>
+  <circle cx="34" cy="70" r="4.5" fill="white"></circle>
+  <circle cx="66" cy="34" r="4.5" fill="white"></circle></g>
+<text font-family="&#39;Sora&#39;,&#39;Helvetica Neue&#39;,sans-serif" font-size="120" font-weight="800" letter-spacing="-2" dominant-baseline="auto" y="232">
+  <tspan x="430" fill="white">Nim</tspan><tspan fill="#F58A5F">AI</tspan>
+</text>
+<text x="430" y="274" font-family="&#39;Sora&#39;,&#39;Helvetica Neue&#39;,sans-serif" font-size="20" font-weight="600" letter-spacing="3.5" fill="#9FB0D0">ORCHESTRATING INTELLIGENT PROCESSES</text>
+</svg>

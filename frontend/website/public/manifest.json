@@ -1,0 +1,15 @@
+{
+  "short_name": "Nimai AI",
+  "name": "Nimai AI — Process Intelligence & RFQ Automation",
+  "icons": [
+    {
+      "src": "logo/nimai-03-appicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0d1b2a",
+  "background_color": "#ffffff"
+}
