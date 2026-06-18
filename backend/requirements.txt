@@ -62,8 +62,10 @@ faiss-cpu==1.14.3
 numpy==2.4.6
 
 # ── ML / vision (docling dependencies) ───────────────────────────────────────
-torch==2.12.0
-torchvision==0.27.0
+# CPU-only torch — avoids 2+ GB of CUDA libs on CPU-only servers (AWS instances without GPU)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.12.0+cpu
+torchvision==0.27.0+cpu
 transformers==5.12.0
 safetensors==0.8.0
 tokenizers==0.22.2
